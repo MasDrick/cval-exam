@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+
+    .userInfo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: auto;
+    max-height: 600px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+    backdrop-filter: blur(5px);
+    padding: 20px 20px 32px 32px;
+    border-radius: 16px;
+
+    .header {
+      padding: 25px 25px 10px 25px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .table {
+      width: 100%;
+      /* Добавьте высоту для таблицы, если необходимо */
+      max-height: 600px;
+      overflow: auto;
+      padding-right: 12px;
+
+      /* Для браузеров на основе WebKit */
+      &::-webkit-scrollbar {
+        width: 10px;
+        background-color: #f9f9fd;
+        border-radius: 10px;
+        margin-right: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        background-color: #f9f9fd;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #529aff;
+      }
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+  }
+}
